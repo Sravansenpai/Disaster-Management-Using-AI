@@ -1,0 +1,256 @@
+/* Modern Dashboard Styling */
+.volunteer-dashboard {
+  padding: 2rem;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  background: linear-gradient(120deg, #2c3e50, #3498db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Stats Cards */
+.stats-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stats-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stats-icon.rating {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+}
+
+.stats-icon.response {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.stats-icon.performers {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.stats-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.stats-label {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Rankings Table */
+.rankings-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.rankings-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.table-responsive {
+  margin: 0;
+}
+
+.rankings-table {
+  margin: 0;
+}
+
+.rankings-table thead th {
+  background: #f8f9fa;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: #7f8c8d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rankings-table thead th:hover {
+  color: #2c3e50;
+}
+
+.rankings-table tbody td {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+  vertical-align: middle;
+}
+
+.volunteer-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.volunteer-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e1e8ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteer-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.top-performer-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  margin-left: 0.5rem;
+}
+
+/* Rating Stars */
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-value {
+  font-weight: 600;
+  color: #f39c12;
+}
+
+/* Progress Bars */
+.response-rate-bar {
+  height: 6px;
+  border-radius: 3px;
+  margin-top: 0.25rem;
+}
+
+.response-rate-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Skill Distribution */
+.skills-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.skill-item {
+  margin-bottom: 1.25rem;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.skill-count {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.skill-progress {
+  height: 8px;
+  border-radius: 4px;
+  background: #e1e8ed;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  transition: width 0.6s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .volunteer-dashboard {
+    padding: 1rem;
+  }
+  
+  .stats-card {
+    margin-bottom: 1rem;
+  }
+  
+  .rankings-table thead {
+    display: none;
+  }
+  
+  .rankings-table tbody td {
+    display: block;
+    text-align: right;
+    padding: 0.75rem 1rem;
+  }
+  
+  .rankings-table tbody td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    color: #7f8c8d;
+  }
+  
+  .volunteer-info {
+    justify-content: flex-end;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stats-card, .rankings-card, .skills-card {
+  animation: fadeIn 0.6s ease-out forwards;
+} 

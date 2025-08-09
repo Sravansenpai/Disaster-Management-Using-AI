@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="150" fill="#2962ff" />
+  
+  <!-- Face -->
+  <circle cx="150" cy="140" r="90" fill="#ffd699" />
+  
+  <!-- Eyes -->
+  <circle cx="120" cy="120" r="10" fill="#333" />
+  <circle cx="180" cy="120" r="10" fill="#333" />
+  
+  <!-- Smile -->
+  <path d="M110,160 Q150,190 190,160" fill="none" stroke="#333" stroke-width="5" />
+  
+  <!-- Doctor's cap -->
+  <path d="M75,100 L225,100 L225,80 Q150,60 75,80 Z" fill="#fff" />
+  <rect x="75" y="80" width="150" height="20" fill="#fff" />
+  
+  <!-- Medical cross -->
+  <rect x="140" y="70" width="20" height="40" fill="#ff4141" />
+  <rect x="130" y="80" width="40" height="20" fill="#ff4141" />
+  
+  <!-- Stethoscope -->
+  <path d="M100,200 Q100,230 120,230 L180,230 Q200,230 200,200" fill="none" stroke="#333" stroke-width="6" />
+  <circle cx="100" cy="200" r="10" fill="#333" />
+  <circle cx="200" cy="200" r="10" fill="#333" />
+</svg> 

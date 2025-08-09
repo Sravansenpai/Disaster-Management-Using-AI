@@ -254,4 +254,3 @@ For support and questions:
 ---
 
 **Built with ❤️ for disaster management and community support**
-

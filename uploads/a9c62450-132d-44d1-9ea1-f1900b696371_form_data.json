@@ -1,0 +1,9 @@
+{
+  "type": "medical",
+  "patientName": "Unknown",
+  "condition": "Medical emergency",
+  "location": "Unknown",
+  "contactNumber": "",
+  "urgency": "high",
+  "additionalInfo": "Medical emergency"
+}
